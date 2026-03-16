@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PulseBoard | Borsa, Crypto, NFT</title>
+    <meta
+      name="description"
+      content="PulseBoard monitora in un unico spazio l'andamento di Borsa, criptovalute e NFT con visual professionali e insight rapidi."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-grid" aria-hidden="true"></div>
+    <div class="bg-glow bg-glow-one" aria-hidden="true"></div>
+    <div class="bg-glow bg-glow-two" aria-hidden="true"></div>
+
+    <header class="topbar">
+      <div class="logo">Pulse<span>Board</span></div>
+      <a class="ghost-button" href="#vision">Scopri la vision</a>
+    </header>
+
+    <main>
+      <section class="hero" id="vision">
+        <p class="eyebrow reveal">Data intelligence in tempo reale</p>
+        <h1 class="reveal reveal-delay-1">
+          Un unico <span class="gradient-text">hub premium</span> per leggere
+          l’energia dei mercati.
+        </h1>
+        <p class="hero-copy reveal reveal-delay-2">
+          Dalla Borsa alle crypto fino agli NFT: PulseBoard trasforma dati sparsi
+          in trend chiari, con visual dinamici e una UX professionale pensata per
+          decisioni rapide.
+        </p>
+
+        <div class="cta-row reveal reveal-delay-3">
+          <button class="primary-button">Inizia l’esperienza</button>
+          <button class="secondary-button">Guarda anteprima</button>
+        </div>
+
+        <div class="live-strip reveal reveal-delay-4" role="status" aria-label="Indicatori in evidenza">
+          <div class="pill up">S&P 500 +1.28%</div>
+          <div class="pill up">BTC +2.91%</div>
+          <div class="pill down">NFT Floor -0.62%</div>
+        </div>
+      </section>
+
+      <section class="feature-cards reveal reveal-delay-3" aria-label="Aree monitorate">
+        <article class="card">
+          <h2>Borsa</h2>
+          <p>Trend di indici e azioni con segnali momentum in tempo quasi reale.</p>
+        </article>
+        <article class="card">
+          <h2>Criptovalute</h2>
+          <p>Movimenti, volatilità e sentiment con priorità su asset ad alta liquidità.</p>
+        </article>
+        <article class="card">
+          <h2>NFT</h2>
+          <p>Focus sulle collezioni chiave: floor price, volume e variazioni giornaliere.</p>
+        </article>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -7,7 +7,6 @@
     <meta
       name="description"
       content="PulseBoard monitora l'andamento di Borsa, crypto e NFT in un'esperienza premium con animazioni immersive."
-      content="PulseBoard monitora in un unico spazio l'andamento di Borsa, criptovalute e NFT con visual professionali e insight rapidi."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,6 +17,17 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <div class="loader" id="loader" aria-live="polite">
+      <div class="loader-core">
+        <p class="loader-title">PulseBoard is loading</p>
+        <div class="loader-money" aria-hidden="true">
+          <span>€</span><span>$</span><span>₿</span><span>Ξ</span><span>◎</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="cursor-dot" aria-hidden="true"></div>
+    <div class="cursor-ring" aria-hidden="true"></div>
     <div class="cursor-glow" aria-hidden="true"></div>
     <div class="mesh-bg" aria-hidden="true"></div>
     <div class="noise" aria-hidden="true"></div>
@@ -31,8 +41,8 @@
       <button class="ghost-button">Accesso anticipato</button>
     </header>
 
-    <main>
-      <section class="hero section-panel" id="esperienza" data-direction="left">
+    <main class="stage-3d">
+      <section class="hero section-panel tilt" id="esperienza" data-direction="left">
         <p class="eyebrow reveal">Next-gen market intelligence</p>
         <h1 class="reveal reveal-delay-1">
           L’atterraggio nel tuo nuovo
@@ -50,7 +60,7 @@
       </section>
 
       <section class="split-wrapper" id="mercati">
-        <article class="split-card section-panel" data-direction="right">
+        <article class="split-card section-panel tilt" data-direction="right">
           <div>
             <p class="split-label">01 · Borsa</p>
             <h2>Indici e titoli con profondità istituzionale</h2>
@@ -64,7 +74,7 @@
           </div>
         </article>
 
-        <article class="split-card section-panel" data-direction="left">
+        <article class="split-card section-panel tilt" data-direction="left">
           <div>
             <p class="split-label">02 · Crypto</p>
             <h2>Volatilità, liquidità e ritmo del mercato digitale</h2>
@@ -76,7 +86,7 @@
           <div class="mini-chart wave" aria-hidden="true"></div>
         </article>
 
-        <article class="split-card section-panel" data-direction="right">
+        <article class="split-card section-panel tilt" data-direction="right">
           <div>
             <p class="split-label">03 · NFT</p>
             <h2>Floor price e volume collezioni, in tempo utile</h2>
@@ -102,54 +112,6 @@
           <span class="up">BTC +2.95%</span>
           <span class="down">ETH -0.42%</span>
         </div>
-      </section>
-    <div class="bg-grid" aria-hidden="true"></div>
-    <div class="bg-glow bg-glow-one" aria-hidden="true"></div>
-    <div class="bg-glow bg-glow-two" aria-hidden="true"></div>
-
-    <header class="topbar">
-      <div class="logo">Pulse<span>Board</span></div>
-      <a class="ghost-button" href="#vision">Scopri la vision</a>
-    </header>
-
-    <main>
-      <section class="hero" id="vision">
-        <p class="eyebrow reveal">Data intelligence in tempo reale</p>
-        <h1 class="reveal reveal-delay-1">
-          Un unico <span class="gradient-text">hub premium</span> per leggere
-          l’energia dei mercati.
-        </h1>
-        <p class="hero-copy reveal reveal-delay-2">
-          Dalla Borsa alle crypto fino agli NFT: PulseBoard trasforma dati sparsi
-          in trend chiari, con visual dinamici e una UX professionale pensata per
-          decisioni rapide.
-        </p>
-
-        <div class="cta-row reveal reveal-delay-3">
-          <button class="primary-button">Inizia l’esperienza</button>
-          <button class="secondary-button">Guarda anteprima</button>
-        </div>
-
-        <div class="live-strip reveal reveal-delay-4" role="status" aria-label="Indicatori in evidenza">
-          <div class="pill up">S&P 500 +1.28%</div>
-          <div class="pill up">BTC +2.91%</div>
-          <div class="pill down">NFT Floor -0.62%</div>
-        </div>
-      </section>
-
-      <section class="feature-cards reveal reveal-delay-3" aria-label="Aree monitorate">
-        <article class="card">
-          <h2>Borsa</h2>
-          <p>Trend di indici e azioni con segnali momentum in tempo quasi reale.</p>
-        </article>
-        <article class="card">
-          <h2>Criptovalute</h2>
-          <p>Movimenti, volatilità e sentiment con priorità su asset ad alta liquidità.</p>
-        </article>
-        <article class="card">
-          <h2>NFT</h2>
-          <p>Focus sulle collezioni chiave: floor price, volume e variazioni giornaliere.</p>
-        </article>
       </section>
     </main>
 

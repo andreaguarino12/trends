@@ -1,5 +1,6 @@
 const revealElements = document.querySelectorAll('.reveal, .section-panel');
 const body = document.body;
+const revealElements = document.querySelectorAll('.reveal');
 
 const observer = new IntersectionObserver(
   entries => {
@@ -40,3 +41,7 @@ const updateParallax = () => {
 window.addEventListener('scroll', updateParallax, { passive: true });
 window.addEventListener('resize', updateParallax);
 window.addEventListener('load', updateParallax);
+  { threshold: 0.2 }
+);
+
+revealElements.forEach(element => observer.observe(element));

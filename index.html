@@ -6,6 +6,7 @@
     <title>PulseBoard | Borsa, Crypto, NFT</title>
     <meta
       name="description"
+      content="PulseBoard monitora l'andamento di Borsa, crypto e NFT in un'esperienza premium con animazioni immersive."
       content="PulseBoard monitora in un unico spazio l'andamento di Borsa, criptovalute e NFT con visual professionali e insight rapidi."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -17,6 +18,91 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <div class="cursor-glow" aria-hidden="true"></div>
+    <div class="mesh-bg" aria-hidden="true"></div>
+    <div class="noise" aria-hidden="true"></div>
+
+    <header class="topbar">
+      <div class="logo">Pulse<span>Board</span></div>
+      <nav class="nav-links">
+        <a href="#mercati">Mercati</a>
+        <a href="#esperienza">Esperienza</a>
+      </nav>
+      <button class="ghost-button">Accesso anticipato</button>
+    </header>
+
+    <main>
+      <section class="hero section-panel" id="esperienza" data-direction="left">
+        <p class="eyebrow reveal">Next-gen market intelligence</p>
+        <h1 class="reveal reveal-delay-1">
+          L’atterraggio nel tuo nuovo
+          <span class="gradient-text">ecosistema finanziario</span>.
+        </h1>
+        <p class="hero-copy reveal reveal-delay-2">
+          PulseBoard unisce Borsa, criptovalute e NFT in un ambiente immersivo:
+          insight immediati, visual premium e interazioni animate per una
+          lettura dei trend più veloce e coinvolgente.
+        </p>
+        <div class="cta-row reveal reveal-delay-3">
+          <button class="primary-button">Entra nella demo</button>
+          <button class="secondary-button">Scopri il concept</button>
+        </div>
+      </section>
+
+      <section class="split-wrapper" id="mercati">
+        <article class="split-card section-panel" data-direction="right">
+          <div>
+            <p class="split-label">01 · Borsa</p>
+            <h2>Indici e titoli con profondità istituzionale</h2>
+            <p>
+              Heatmap evolute, segnali momentum e focus sulle rotazioni dei
+              settori per capire dove si sta spostando il capitale.
+            </p>
+          </div>
+          <div class="mini-chart bars" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+        </article>
+
+        <article class="split-card section-panel" data-direction="left">
+          <div>
+            <p class="split-label">02 · Crypto</p>
+            <h2>Volatilità, liquidità e ritmo del mercato digitale</h2>
+            <p>
+              Dashboard orientata all'azione con lettura rapida di trend,
+              accelerazioni e cambi di sentiment sui principali asset crypto.
+            </p>
+          </div>
+          <div class="mini-chart wave" aria-hidden="true"></div>
+        </article>
+
+        <article class="split-card section-panel" data-direction="right">
+          <div>
+            <p class="split-label">03 · NFT</p>
+            <h2>Floor price e volume collezioni, in tempo utile</h2>
+            <p>
+              Monitora i movimenti delle collezioni più rilevanti con indicatori
+              visivi pensati per cogliere opportunità e inversioni.
+            </p>
+          </div>
+          <div class="mini-chart rings" aria-hidden="true"></div>
+        </article>
+      </section>
+
+      <section class="ticker reveal" aria-label="Indicatori live simulati">
+        <div class="ticker-track">
+          <span class="up">S&P 500 +1.24%</span>
+          <span class="up">NASDAQ +1.61%</span>
+          <span class="up">BTC +2.95%</span>
+          <span class="down">ETH -0.42%</span>
+          <span class="up">SOL +3.11%</span>
+          <span class="down">NFT Floor -0.67%</span>
+          <span class="up">S&P 500 +1.24%</span>
+          <span class="up">NASDAQ +1.61%</span>
+          <span class="up">BTC +2.95%</span>
+          <span class="down">ETH -0.42%</span>
+        </div>
+      </section>
     <div class="bg-grid" aria-hidden="true"></div>
     <div class="bg-glow bg-glow-one" aria-hidden="true"></div>
     <div class="bg-glow bg-glow-two" aria-hidden="true"></div>
